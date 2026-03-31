@@ -16,8 +16,25 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChooseActivity"
+            android:exported="true"
+            tools:ignore="ExtraText">
+            <intent-filter android:label="@string/title_activity_choose">>
+                <action android:name="com.example.sherlock.ACTION_CHOOSE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="true"
+            android:label="@string/title_activity_third" >
+            <intent-filter>
+                <action android:name="com.example.sherlock.ACTION_CHOOSE" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
